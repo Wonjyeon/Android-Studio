@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 확대, 축소를 하면서 동시에 이동/투명도 조정 등 여러가지 효과를 한꺼번에 넣을 수 있음.-->
+
+    <scale
+
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="3.0"
+        android:toYScale="3.0"
+        android:duration="1500"
+        />
+
+    <!-- 자연스럽게 늘어났다가 줄어들도록-->
+    <scale
+
+        android:startOffset="1500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="0.3"
+        android:toYScale="0.3"
+        android:duration="1500"
+        />
+
+    <!-- 회전은 rotate , 투명도는 alpha-->
+
+</set>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/monthPrevious"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backward"
+            android:layout_alignParentLeft="true"/>
+
+
+        <TextView
+            android:id="@+id/monthText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="현재 년월"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/monthNext"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forward"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff99">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="일"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="월"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="화"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="목"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="금"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="토"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/monthView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffbbbbbb"
+        android:horizontalSpacing="1dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"></GridView>
+
+</LinearLayout>

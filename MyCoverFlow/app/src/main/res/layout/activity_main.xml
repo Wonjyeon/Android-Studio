@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.techtown.coverflow.CoverFlow
+        android:id="@+id/coverFlow"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        ></org.techtown.coverflow.CoverFlow>
+
+</RelativeLayout>
